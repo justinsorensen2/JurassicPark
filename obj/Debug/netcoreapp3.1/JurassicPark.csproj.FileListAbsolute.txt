@@ -1,0 +1,11 @@
+/home/justin/sdg/JurassicPark/obj/Debug/netcoreapp3.1/JurassicPark.csprojAssemblyReference.cache
+/home/justin/sdg/JurassicPark/obj/Debug/netcoreapp3.1/JurassicPark.AssemblyInfoInputs.cache
+/home/justin/sdg/JurassicPark/obj/Debug/netcoreapp3.1/JurassicPark.AssemblyInfo.cs
+/home/justin/sdg/JurassicPark/bin/Debug/netcoreapp3.1/JurassicPark
+/home/justin/sdg/JurassicPark/bin/Debug/netcoreapp3.1/JurassicPark.deps.json
+/home/justin/sdg/JurassicPark/bin/Debug/netcoreapp3.1/JurassicPark.runtimeconfig.json
+/home/justin/sdg/JurassicPark/bin/Debug/netcoreapp3.1/JurassicPark.runtimeconfig.dev.json
+/home/justin/sdg/JurassicPark/bin/Debug/netcoreapp3.1/JurassicPark.dll
+/home/justin/sdg/JurassicPark/bin/Debug/netcoreapp3.1/JurassicPark.pdb
+/home/justin/sdg/JurassicPark/obj/Debug/netcoreapp3.1/JurassicPark.dll
+/home/justin/sdg/JurassicPark/obj/Debug/netcoreapp3.1/JurassicPark.pdb
