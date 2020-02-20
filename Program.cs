@@ -26,7 +26,7 @@ namespace JurassicPark
           Console.WriteLine("What is the weight of this dinosaur(in lbs)?");
           int weight = int.Parse(Console.ReadLine());
 
-          Console.WriteLine("What is this dino's diet type? Please enter herbivore(H) or carnivore(C).");
+          Console.WriteLine("What is this dino's diet type? Please enter (herbivore) or (carnivore).");
           var diet = Console.ReadLine();
 
           Console.WriteLine("What enclosure will this dinosaur call home? Please enter an Enclosure Number.");
