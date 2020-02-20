@@ -15,7 +15,7 @@ namespace JurassicPark
       {
 
         Console.WriteLine("What would you like to do?");
-        Console.WriteLine("View All(VIEW), Add a dinosaur(ADD), Remove a dinosaur(REMOVE), ");
+        Console.WriteLine("View All(VIEW), Add a dinosaur(ADD), Remove a dinosaur(REMOVE), Display a summary - sorted by diet(DIET), ");
         Console.WriteLine("Display 3 heaviest (HEAVY), Transfer a dinosaur(MOVE), or Quit(QUIT)?");
         var input = Console.ReadLine().ToUpper();
         if (input == "ADD")
@@ -57,6 +57,10 @@ namespace JurassicPark
           {
             Console.WriteLine($"{d.Name} weighs {d.Weight}, is a(n) {d.DietType}, and lives in Enclosure {d.EnclosureNumber}. It was acquired, {d.DateAcquired}.");
           }
+        }
+        else if (input == "DIET")
+        {
+          tracker.DietSummary();
         }
         else
         {

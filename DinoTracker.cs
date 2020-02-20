@@ -57,6 +57,19 @@ namespace JurassicPark
       }
     }
 
+    public void DietSummary()
+    {
+      var carnivores = Dinosaurs.Select(carnivores => Dinosaurs.DietType == "carnivore");
+      foreach (var c in carnivores)
+      {
+        Console.WriteLine($"The {c.Name} is a {c.DietType}.");
+      }
+      var herbivores = Dinosaurs.Select(carnivores => Dinosaurs.DietType == "herbivore");
+      foreach (var c in herbivores)
+      {
+        Console.WriteLine($"The {c.Name} is a {c.DietType}.");
+      }
+    }
 
   }
 
