@@ -42,10 +42,10 @@ namespace JurassicPark
     }
     public void MoveADino(string name)
     {
-      var moveIndex = Dinosaurs.IndexOf((Dinosaurs.First(name => Dinosaurs.Contains(name))));
+      var move = Dinosaurs.First(Dinosaur => Dinosaur.Name == name);
       Console.WriteLine($"Where would you like to move them? Please enter an Enclosure Number.");
       var newEnclosure = int.Parse(Console.ReadLine());
-      Dinosaurs[moveIndex].EnclosureNumber = newEnclosure;
+      move.EnclosureNumber = newEnclosure;
     }
 
     public void DisplayThreeHeaviest()
@@ -59,21 +59,11 @@ namespace JurassicPark
 
     public void DietSummary()
     {
-      var carnivores = Dinosaurs.Select(carnivores => Dinosaurs.DietType == "carnivore");
-      foreach (var c in carnivores)
-      {
-        Console.WriteLine($"The {c.Name} is a {c.DietType}.");
-      }
-      var herbivores = Dinosaurs.Select(carnivores => Dinosaurs.DietType == "herbivore");
-      foreach (var c in herbivores)
-      {
-        Console.WriteLine($"The {c.Name} is a {c.DietType}.");
-      }
+      var carnivores = Dinosaurs.Where(dinosaur => dinosaur.DietType == "carnivore");
+      Console.WriteLine($"There are {carnivores.Count()}. carnivore(s) in Jurassic Park.");
+
+      var herbivores = Dinosaurs.Select(dinosaur => dinosaur.DietType == "herbivore");
+      Console.WriteLine($"There are {herbivores.Count()}. herbivore(s) in Jurassic Park.");
     }
-
   }
-
-
-
-
 }
